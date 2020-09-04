@@ -1,0 +1,46 @@
+{
+  "name": "AMBNetworkRequest",
+  "version": "1.0.0",
+  "summary": "阿米巴网络技术科技有限公司内部网络库。",
+  "homepage": "https://gitee.com/ardura/ambnetwork-request",
+  "license": "MIT",
+  "authors": {
+    "ardura": "r695331437@163.com"
+  },
+  "source": {
+    "git": "https://gitee.com/ardura/ambnetwork-request.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "AMBNetworkRequest/AMBNetworkRequest/AMBNetworkRequest.h",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "YTKNetwork": [
+
+    ],
+    "YYModel": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Common",
+      "source_files": "AMBNetworkRequest/AMBNetworkRequest/Common/*.{h,m}"
+    },
+    {
+      "name": "NetworkBLController",
+      "dependencies": {
+        "AMBNetworkRequest/Common": [
+
+        ]
+      },
+      "source_files": "AMBNetworkRequest/AMBNetworkRequest/NetworkBLController/*.{h,m}"
+    },
+    {
+      "name": "NetworkReachabilityManager",
+      "source_files": "AMBNetworkRequest/AMBNetworkRequest/NetworkReachabilityManager/*.{h,m}"
+    }
+  ]
+}
